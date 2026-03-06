@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Molegen</title>
+  <style>
+    body { font-family: Arial; max-width: 720px; margin: 40px auto; }
+    .row { margin: 12px 0; }
+    button { padding: 10px 14px; }
+    #log { white-space: pre-wrap; background: #111; color: #0f0; padding: 12px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Molegen</h1>
+
+  <div class="row">
+    <input type="file" id="file" accept=".pdb" />
+  </div>
+
+  <div class="row">
+    <label>Preset:</label>
+    <select id="preset">
+      <option value="clean_cartoon">clean_cartoon</option>
+      <option value="pocket">pocket</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <button id="btnPng">Generate PNG</button>
+    <button id="btnSpin">Generate MP4 (spin)</button>
+  </div>
+
+  <div class="row">
+    <div id="log">ready</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
